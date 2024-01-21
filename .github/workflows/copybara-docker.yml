@@ -27,7 +27,6 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            tryon-technology/copybara
             ghcr.io/tryon-technology/copybara
           tags: |
             type=raw,${{ env.COPYBARA_SHA }}
@@ -41,12 +40,6 @@ jobs:
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@v1
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v1
-        with:
-          username: tryon-technology
-          password: ${{ secrets.DOCKER_TOKEN_BOT }}
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
