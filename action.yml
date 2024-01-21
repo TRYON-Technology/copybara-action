@@ -1,4 +1,4 @@
-name: "Copybara Action - Mailchain"
+name: "Copybara Action - tryon-technology"
 description: "Transform and move code between repositories. Start with ZERO config and 100% customizable."
 author: "Romain Barissat"
 
@@ -97,7 +97,7 @@ inputs:
   copybara_image:
     description: "Copybara Docker image to run."
     required: false
-    default: "mailchain/copybara"
+    default: "tryon-technology/copybara"
 
   copybara_image_tag:
     description: "Copybara Docker image tag to use."
